@@ -17,7 +17,7 @@ public class TestRegistrationPage extends TestAbstract {
 
     @BeforeClass
     @Parameters("browser")
-    public void openHomePage(String browser) throws Exception {
+    public void openDefaultPage(String browser) throws Exception {
         if (browser.equals("firefox")) {
             driver = getFirefoxDriver();
         } else {

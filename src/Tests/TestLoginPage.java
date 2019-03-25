@@ -18,7 +18,7 @@ public class TestLoginPage extends TestAbstract {
 
     @BeforeClass
     @Parameters("browser")
-    public void openHomePage(String browser) throws Exception {
+    public void openDefaultPage(String browser) throws Exception {
         if (browser.equals("firefox")) {
             driver = getFirefoxDriver();
         } else {
@@ -29,7 +29,7 @@ public class TestLoginPage extends TestAbstract {
         poDefault = new PODefault(driver);
     }
 
-    @BeforeMethod
+    @AfterMethod
     public void openDefaultPage() {
         driver.get(dafault_url);
     }
