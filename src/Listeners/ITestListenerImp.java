@@ -5,6 +5,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class ITestListenerImp implements ITestListener {
+    //Just an example
     @Override
     public void onFinish(ITestContext Result)
     {
